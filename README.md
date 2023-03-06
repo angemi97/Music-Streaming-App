@@ -65,3 +65,7 @@ In order to implement this project the following have been used:
 
     ![Consumers](misc/Consumer.png)
     > In the beggining you are asked to type your name. Then a list of the available artist is printed with a prompt asking you to choose an artists you might be interested in. Finally, you get to choose to download a song from the list. You can keep browsing artists and downloading songs until you quit the app.
+
+* Finally the [`Downloaded Chunks`](Project/src/Downloaded%20Chunks) directory should look like this after a succesful download. *Song in chunks*
+
+    ![Downloaded Chunks](misc/Downloaded_Chunks.png)
