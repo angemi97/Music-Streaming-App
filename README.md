@@ -1,7 +1,7 @@
 
 # **About this project**
 
->The purpose of this Java Project is to build a music streaming app. In this phase, the back end of the service is made and executed from the command line, where a consumer (client) is connected to multiple servers in order to download a song they like. In phase two, the client side app is implemented using android studio.
+>The purpose of this Java Project is to build a music streaming app. In [phase one](Project), the back end of the service is made and executed from the command line, where a consumer (client) is connected to multiple servers in order to download a song they like. In [phase two](Aggelis), the client side app is implemented using android studio.
 
 # **Contents**
 - [**About this project**](#about-this-project)
@@ -9,6 +9,9 @@
 - [**How to run**](#how-to-run)
 - [**Implementation**](#implementation)
 - [**Example**](#example)
+- [**Android Client App (Phase Two)**](#android-client-app-phase-two)
+  - [How to run](#how-to-run-1)
+  - [Android app use-cases](#android-app-use-cases)
 
 # **How to run**
 1) Download all the files in the [Project](Project) directory.
@@ -37,7 +40,7 @@ In order to implement this project the following have been used:
    * [`Broker.java`](Project/src/Broker.java)
        > "Middle man" between the main servers (Publisher) and the clients (Consumer). Each one of them can hold up to 100 threads. The Consumer sends their query to the Broker (eg. a song name), the Broker passes this query to the corresponding Publisher, depending on the artist, the Publisher sends their response (eg. first chunk of the song) and the broker finally pushes it to the Consumer.
    * [`Consumer.java`](Project/src/Consumer.java)
-       > The client side. The logs in with a specific username, receives the list of the artists that are available and they can choose which artist they wish to listen to. A song list matching the artist is returned, if they exist, and the client can choose whichever song they want from that list. The files are downloaded in chunks, so that they can be buffered and the user can start listening to them without having to wait for the whole download to finish. The Consumer is implemented as an Android App in Phase 2 of this project but for now, the songs will be downloaded as chunks in the [**Downloaded Chunks**](Project/src/Downloaded%20Chunks) directory. 
+       > The client side. The logs in with a specific username, receives the list of the artists that are available and they can choose which artist they wish to listen to. A song list matching the artist is returned, if they exist, and the client can choose whichever song they want from that list. The files are downloaded in chunks, so that they can be buffered and the user can start listening to them without having to wait for the whole download to finish. The Consumer is implemented as an Android App in [phase two](Aggelis) of this project but for now, the songs will be downloaded as chunks in the [**Downloaded Chunks**](Project/src/Downloaded%20Chunks) directory. 
 * 4 extra classes for handling the music files:
    * [`Info.java`](Project/src/Info.java)
         > The Info class stores the ip, port, brokerId and registeredArtists of a Broker, where registeredArtists is a list of artist names for which the Broker is responsible.
@@ -69,3 +72,18 @@ In order to implement this project the following have been used:
 * Finally the [`Downloaded Chunks`](Project/src/Downloaded%20Chunks) directory should look like this after a succesful download. *Song in chunks*
 
     ![Downloaded Chunks](misc/Downloaded_Chunks.png)
+
+# **Android Client App (Phase Two)**
+
+## How to run
+
+* Download and set up the [**Android project**](Aggelis).
+* Initialize the Publishers and the Brokers as in [phase one](#how-to-run).
+* Run the Consumers from Android studio or your phone, after setting up the project.
+  
+## Android app use-cases
+
+> In phase one, the client could only download the chunks in the Downloaded Chunks folder. In this app, the client can do the following:
+
+* **Home Page** 
+    * You can either log in and browse online, or go to offline mode where you can listen to fully downloaded songs. <br> ![Home page](misc/App-Home.png)

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:hint="@string/username"
+            android:textSize="20sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:background="@color/colorPrimaryDark"
+            android:importantForAutofill="no"
+            android:drawableLeft="@drawable/ic_person_black_24dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/login"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/offlinePlay"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:text="@string/offPlay"
+            android:layout_toRightOf="@+id/login"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

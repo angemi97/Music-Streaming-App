@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aggelis</string>
+    <string name="login">login</string>
+    <string name="offPlay">Offline Mode</string>
+    <string name="username">username</string>
+    <string name="searchArtist">Search... </string>
+    <string name="search">Find Artist </string>
+    <string name="search2">Find Song </string>
+    <string name="search3">Download Song </string>
+</resources>
