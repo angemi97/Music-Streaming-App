@@ -87,3 +87,12 @@ In order to implement this project the following have been used:
 
 * **Home Page** 
     * You can either log in and browse online, or go to offline mode where you can listen to fully downloaded songs. <br> ![Home page](misc/App-Home.png)
+* **Online use** 
+    * A list of available artist appears, you can tap on the one you are interested in.
+    * A list of the chosen artist's available songs is then shown, you can choose to either stream or download it.
+    * During streaming, the player downloads the chunks and plays them in succession as they are being downloaded.
+    * You can download the song on your device for later use in offline mode.
+* **Offline use**
+    * From the home screen, you can tap on the offline mode button.
+    * A list of the songs you have downloaded in your device will show up.
+    * You can then choose any of them to listen to.
